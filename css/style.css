@@ -530,33 +530,6 @@ footer {
     overflow: visible;
     text-overflow: clip;
 }
-
-
-/* Responsive adjustments 
-@media (max-width: 1000px) {
-    .entry {
-        flex-direction: column;
-        align-items: center;
-    }
-    .entry-image img {
-        width: 100%;
-        max-width: 400px;
-    }
-    .entry-content {
-        max-width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-    .sub-entry {
-        width: 48%; 
-        margin-bottom: 20px;
-    }
-}
-@media (max-width: 600px) {
-    .sub-entry {
-        width: 100%; 
-    }
-}*/
 /* CONTENT SECTION */
 .content {
   padding: 20px;
@@ -624,10 +597,6 @@ footer {
   color: #ffffff; 
   text-align: center;
 }
-
-
-
-
 /* MOBILE */
 @media (max-width: 799px) {
   .row {
