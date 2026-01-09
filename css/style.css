@@ -1,7 +1,7 @@
 body {
     background-color: #081f4d; 
     font-family: Arial, sans-serif;
-    color: white;              
+    color: #ffffff;              
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,7 @@ body {
     left: 0;
      right: 0;
     height: 13px; 
-    background: #032D68;
+    background: #081f4d;
     z-index: 3;
     border: 2px solid black;
     margin-bottom: 0;
@@ -28,7 +28,7 @@ body {
     align-items: center;
     gap: 8px; 
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 .nav-home .home-icon img {
     width: 24px;  
@@ -44,7 +44,7 @@ body {
 .nav-links a,
 .nav-links p {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-size: 16px; 
     font-weight: 500; 
 }
@@ -78,11 +78,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;        
-    width: 339px;      
-    max-width: 1400px;
-    height: 50px;   
-    margin-bottom: 0;
+    gap: 20px;        
+       box-sizing: border-box;
+    max-width: 100px;
+    
     width: 100%;
 
 }
@@ -257,7 +256,7 @@ main{
     font-weight: 400;
     text-align: center;
     margin: 0;
-    color:white;       
+    color:#ffffff;       
 }
 .label .description .p,
 .label .description .p{
@@ -291,7 +290,7 @@ h1, h2 {
     margin: 0;       
     padding: 20px;
     background-color: #081f4d; 
-    color: white;              
+    color: #ffffff;              
     box-sizing: border-box;
     border-radius: 8px;
     display: flex;
@@ -380,8 +379,8 @@ footer {
     min-height: 100vh; 
 }
 .text-box {
-    color:#0b2a6a;        
-    background-color: white; 
+    color:#032D68;        
+    background-color: #FCFCFA; 
     padding: 15px;
     border-radius: 6px;
     width: 200px;
@@ -444,7 +443,7 @@ footer {
 }
 .inquire-btn {
     display: inline-block;
-    background-color: #032D68; 
+    background-color: #081f4d; 
     padding: 12px 24px;
     border-radius: 0;
     text-decoration: none;
@@ -455,12 +454,12 @@ footer {
 
 .inquire-btn p {
     margin: 0;
-    color: white;
+    color: #ffffff;
     font-weight: 600;
 }
 
 .inquire-btn:hover {
-    background-color: #0548A7;
+    background-color: #081f4d;
     cursor: pointer;
 }
 /* 2 TEXT SECTION (h2 */
@@ -490,7 +489,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 32%; 
-    background-color: white;
+    background-color: #FCFCFA;
     border-radius: 6px;
     padding: 10px;
     box-sizing: border-box;
@@ -533,7 +532,7 @@ footer {
 }
 
 
-/* Responsive adjustments */
+/* Responsive adjustments 
 @media (max-width: 1000px) {
     .entry {
         flex-direction: column;
@@ -557,13 +556,7 @@ footer {
     .sub-entry {
         width: 100%; 
     }
-}
-
-.aa{
-
-    border: 1px solid green;
-    gap: 0;
-}
+}*/
 /* CONTENT SECTION */
 .content {
   padding: 20px;
@@ -577,7 +570,7 @@ footer {
 }
 
 .white{
-    background-color: white;
+    background-color: #FCFCFA;
     color: #032D68;
 }
 
@@ -628,10 +621,29 @@ footer {
 .content p {
   font-size: 13px;
   line-height: 1.5;
-  color: white; 
+  color: #ffffff; 
   text-align: center;
 }
 
 
 
 
+/* MOBILE */
+@media (max-width: 799px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* TABLET */
+@media (min-width: 800px) and (max-width: 1279px) {
+  
+}
+
+/* DESKTOP */
+@media (min-width: 1280px) {
+  .row {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

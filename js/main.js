@@ -1,4 +1,4 @@
-// ================= ITEMS DATA =================
+
 const items = {
   1: {
     image: "assets/images/item1.png",
@@ -62,15 +62,13 @@ const items = {
   }
 };
 
-// ============ CLICK HANDLER (HOME PAGE) ============
+
 document.querySelectorAll(".image-container").forEach(item => {
   item.addEventListener("click", function () {
     const id = this.dataset.id;
     localStorage.setItem("selectedItem", id);
   });
 });
-
-// ============ LOAD DATA (SINGLE ENTRY PAGE) ============
 const selectedId = localStorage.getItem("selectedItem");
 
 if (selectedId && items[selectedId]) {
